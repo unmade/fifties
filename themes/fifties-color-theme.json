@@ -1,0 +1,245 @@
+{
+    "name": "fifties",
+    "type": "dark",
+    "colors": {
+        "foreground": "#c9c3b1",
+        "sideBar.foreground": "#c9c3b1",
+        "editor.background": "#292929",
+        "editor.foreground": "#c9c3b1",
+        "editorLineNumber.foreground": "#757166",
+        "editorLineNumber.activeForeground": "#c9c3b1",
+        "activityBarBadge.background": "#73A1B0",
+        "statusBar.background" : "#474743",
+        "statusBar.foreground" : "#c9c3b1",
+        "focusBorder": "#73A1B0",
+        "editor.selectionBackground": "#4baccc66",
+        "editor.selectionHighlightBackground": "#ffffff33",
+        "editor.wordHighlightBackground": "#ffffff22",
+        "editor.wordHighlightStrongBackground": "#ffffff33",
+        "editor.hoverHighlightBackground": "#4baccc33",
+        "gitDecoration.ignoredResourceForeground": "#757166",
+    },
+    "tokenColors": [
+        {
+            "name": "Comment",
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#757166"
+            }
+        },
+        {
+            "name": "Keyword, Storage",
+            "scope": [
+                "keyword",
+                "storage.type.function",
+                "storage.type.class",
+                "storage.type.js",
+                "storage.modifier",
+                "constant.language.python",
+                "keyword.operator.logical.python",
+                "constant.character.format.placeholder.other",
+                "punctuation.section.embedded.begin",
+                "punctuation.section.embedded.end",
+                "source.js meta.method.declaration meta.var.expr storage.type",
+                "entity.name.tag.yaml",
+            ],
+            "settings": {
+                "foreground": "#db7c45",
+                "fontStyle": "",
+            }
+        },
+        {
+            "name": "No color",
+            "scope": [
+                "keyword.operator",
+                "storage.type.function.arrow",
+                "entity.other.inherited-class",
+                "meta.embedded.expression",
+                "storage.modifier",
+                "entity.name.section.group-title.ini",
+                "punctuation.separator.key-value.ini",
+                "punctuation.separator.key-value.js",
+                "constant.language.import-export-all.js",
+            ],
+            "settings": {
+                "foreground": "#c5c0af",
+            }
+        },
+        {
+            "name": "Number",
+            "scope": [
+                "constant.numeric",
+            ],
+            "settings": {
+                "foreground": "#7fb3bd"
+            }
+        },
+        {
+            "name": "Magic",
+            "scope": [
+                "support.function.magic",
+                "support.variable.magic",
+            ],
+            "settings": {
+                "foreground": "#e992a8"
+            }
+        },
+        {
+            "name": "Exceptions",
+            "scope": [
+                "support.type.exception",
+            ],
+            "settings": {
+                "foreground": "#DD5341",
+            }
+        },
+        {
+            "name": "Self",
+            "scope": [
+                "variable.parameter.function.language.special.self",
+                "variable.language.special.self",
+                "variable.language.special.cls",
+                "variable.language.this",
+            ],
+            "settings": {
+                "foreground": "#aa8c4a",
+            }
+        },
+        {
+            "name": "Constant",
+            "scope": [
+                "constant.language",
+                "support.constant",
+                "constant.character",
+                "constant.escape",
+                "keyword.other.unit",
+            ],
+            "settings": {
+                "foreground": "#e992a8"
+            }
+        },
+        {
+            "name": "String, Symbols, Markup Heading",
+            "scope": [
+                "string",
+                "constant.other.symbol",
+                "constant.other.key",
+                "markup.heading",
+                "markup.inserted.git_gutter",
+                "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+                "storage.type.string.python",
+                "source.ini",
+            ],
+            "settings": {
+                "foreground": "#739B89"
+            }
+        },
+        {
+            "name": "Docstring",
+            "scope": [
+                "string.quoted.docstring.multi",
+            ],
+            "settings": {
+                "foreground": "#739B89"
+            }
+        },
+
+        {
+            "name": "Keywords in function call",
+            "scope": [
+                "variable.parameter.function-call"
+            ],
+            "settings": {
+                "foreground": "#b14419",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Python decorator",
+            "scope": [
+                "punctuation.definition.decorator",
+                "entity.name.function.decorator",
+                "source.python meta.function.decorator support.type", // Handle textmate bug involving class decorator args
+                "source.python meta.function.decorator entity.name.function.decorator ",
+            ],
+            "settings": {
+                "foreground": "#73A1B0",
+            }
+        },
+        {
+            "name": "Support type",
+            "scope": [
+                "support.type",
+                "storage.type",
+            ],
+            "settings": {
+                "foreground": "#a0613d",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Function name",
+            "scope": [
+                "entity.name.function",
+                "source.js meta.method.declaration storage.type",
+                "support.function.go",
+            ],
+            "settings": {
+                "foreground": "#FACA78",
+            }
+        },
+        {
+            "name": "Builtins",
+            "scope": [
+                "support.function.builtin",
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
+            }
+        },
+        {
+            "name": "Super",
+            "scope": [
+                "variable.language.super",
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
+            }
+        },
+        {
+            "name": "Tag",
+            "scope": [
+                "entity.name.tag",
+                "meta.tag.sgml",
+                "markup.deleted.git_gutter",
+                "punctuation.definition.tag.begin",
+                "punctuation.definition.tag.end",
+            ],
+            "settings": {
+                "foreground": "#a0613d"
+            }
+        },
+        {
+            "name": "Tag attributes",
+            "scope": [
+                "meta.tag.attributes",
+            ],
+            "settings": {
+                "foreground": "#aa8c4a",
+            }
+        },
+        {
+            "name": "Literal keys",
+            "scope": [
+                "meta.object-literal.key",
+            ],
+            "settings": {
+                "foreground": "#a0613d",
+            }
+        },
+    ]
+}

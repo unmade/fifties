@@ -1,0 +1,21 @@
+{
+    "name": "fifties",
+    "displayName": "fifties",
+    "description": "Dark color theme inspired by Gruvbox and Pycharm Darcula",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "fifties",
+                "uiTheme": "vs-dark",
+                "path": "./themes/fifties-color-theme.json"
+            }
+        ]
+    }
+}

@@ -68,15 +68,17 @@
                 "keyword",
                 "storage.type.function",
                 "storage.type.class",
-                "storage.type.js",
-                "storage.modifier",
+                "storage.modifier.js.jsx",
                 "constant.language.python",
                 "keyword.operator.logical.python",
                 "constant.character.format.placeholder.other",
                 "punctuation.section.embedded.begin",
                 "punctuation.section.embedded.end",
-                "source.js meta.method.declaration meta.var.expr storage.type",
                 "entity.name.tag.yaml",
+                // js
+                "source.js meta.method.declaration meta.var.expr storage.type.js",
+                "storage.type.js",
+                "meta.object-literal.key meta.brace",
             ],
             "settings": {
                 "foreground": "#db7c45",
@@ -93,8 +95,11 @@
                 "storage.modifier",
                 "entity.name.section.group-title.ini",
                 "punctuation.separator.key-value.ini",
+                // js
                 "punctuation.separator.key-value.js",
                 "constant.language.import-export-all.js",
+                "meta.object-literal.key variable",
+                "meta.object-literal.key punctuation",
             ],
             "settings": {
                 "foreground": "#c5c0af",
@@ -216,7 +221,7 @@
             "name": "Function name",
             "scope": [
                 "entity.name.function",
-                "source.js meta.method.declaration storage.type",
+                "source.js meta.method.declaration storage.type.js",
                 "support.function.go",
             ],
             "settings": {
@@ -252,6 +257,15 @@
             ],
             "settings": {
                 "foreground": "#a0613d"
+            }
+        },
+        {
+            "name": "React Tag",
+            "scope": [
+                "entity.name.tag support.class",
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
             }
         },
         {

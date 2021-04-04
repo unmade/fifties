@@ -79,6 +79,8 @@
                 "source.js meta.method.declaration meta.var.expr storage.type.js",
                 "storage.type.js",
                 "meta.object-literal.key meta.brace",
+                "punctuation.definition.template-expression.begin",
+                "punctuation.definition.template-expression.end",
             ],
             "settings": {
                 "foreground": "#db7c45",
@@ -100,6 +102,9 @@
                 "constant.language.import-export-all.js",
                 "meta.object-literal.key variable",
                 "meta.object-literal.key punctuation",
+                "meta.template.expression.js variable",
+                "meta.template.expression.js punctuation",
+                "meta.template.expression.js meta",
             ],
             "settings": {
                 "foreground": "#c5c0af",
@@ -287,5 +292,14 @@
                 "foreground": "#a0613d",
             }
         },
+        {
+            "name": "JSON",
+            "scope": [
+                "support.type.property-name.json",
+            ],
+            "settings": {
+                "fontStyle": "",
+            }
+        }
     ]
 }

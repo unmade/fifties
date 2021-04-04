@@ -23,7 +23,6 @@
         "editor.wordHighlightBackground": "#ffffff22",
         "editor.wordHighlightStrongBackground": "#ffffff33",
         "editor.hoverHighlightBackground": "#4baccc33",
-        "gitDecoration.ignoredResourceForeground": "#757166",
         "scrollbar.shadow": "#ffffff00",
         "widget.shadow": "#ffffff00",
         "textLink.activeForeground": "#7fb3bd",
@@ -74,6 +73,13 @@
 
         "sideBar.background": "#262521",
         "sideBar.foreground": "#c9c3b1",
+
+        "gitDecoration.addedResourceForeground": "#90bb8f",
+        "gitDecoration.deletedResourceForeground": "#DD5341",
+        "gitDecoration.stageDeletedResourceForeground": "#dd5341",
+        "gitDecoration.untrackedResourceForeground": "#90bb8f",
+        "gitDecoration.ignoredResourceForeground": "#757166",
+
     },
     "tokenColors": [
         {

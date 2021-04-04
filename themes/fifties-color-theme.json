@@ -40,6 +40,7 @@
         "terminal.ansiRed": "#DD5341",
         "terminal.ansiWhite": "#c9c3b1",
         "terminal.ansiYellow": "#FACA78",
+        "terminal.ansiBrightBlack": "#757166",
         "terminal.ansiBrightBlue": "#73A1B0",
         "terminal.ansiBrightGreen": "#90bb8f",
         "terminal.ansiBrightMagenta": "#db7c45",
@@ -49,6 +50,17 @@
         "terminal.ansiBrightYellow": "#FACA78",
 
         "panel.border": "#3c382a",
+        "panelTitle.activeForeground": "#c5c0af",
+        "panelTitle.inactiveForeground": "#757166",
+
+        "tab.activeForeground": "#c5c0af",
+        "tab.inactiveForeground": "#757166",
+        "tab.inactiveBackground": "#292929",
+        "editorGroupHeader.tabsBackground": "#292929",
+        "editorGroup.border": "#3c382a",
+        "editorGroupHeader.tabsBorder": "#3c382a",
+        "tab.activeBorder": "#5a543f",
+        "tab.border": "#ffffff00",
     },
     "tokenColors": [
         {

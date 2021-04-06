@@ -6,8 +6,7 @@
 
         "button.background": "#73A1B0",
         "button.foreground": "#eae8e1",
-        // "editor.background": "#292724",
-        "editor.background": "#292724",
+        "editor.background": "#2b2926",
         "editor.foreground": "#c9c3b1",
         "editorLineNumber.foreground": "#757166",
         "editorLineNumber.activeForeground": "#c9c3b1",
@@ -49,7 +48,7 @@
         "terminal.ansiBrightYellow": "#FACA78",
 
         "panel.border": "#3c382a",
-        "panel.background": "#292724",
+        "panel.background": "#2b2926",
         "panelTitle.activeForeground": "#c5c0af",
         "panelTitle.inactiveForeground": "#757166",
 

@@ -71,7 +71,7 @@
         "activityBarBadge.background": "#73A1B0",
 
         "sideBar.background": "#262521",
-        "sideBar.foreground": "#c9c3b1",
+        "sideBar.foreground": "#c5c0af",
 
         "gitDecoration.addedResourceForeground": "#90bb8f",
         "gitDecoration.deletedResourceForeground": "#DD5341",
@@ -79,6 +79,21 @@
         "gitDecoration.untrackedResourceForeground": "#90bb8f",
         "gitDecoration.ignoredResourceForeground": "#757166",
 
+        "editorWidget.foreground": "#c5c0af",
+        "editorWidget.background": "#34332d",
+        "editorSuggestWidget.background": "#34332d",
+        "editorSuggestWidget.highlightForeground": "#73A1B0",
+        "editorSuggestWidget.selectedBackground": "#4baccc66",
+        "editorHoverWidget.background": "#34332d",
+
+        "list.activeSelectionBackground": "#4baccc66",
+        "list.inactiveSelectionBackground": "#4baccc33",
+        "list.activeSelectionForeground": "#eae8e1",
+        "list.hoverBackground": "#ffffff11",
+        "list.focusBackground": "#4baccc66",
+        "tree.indentGuidesStroke": "#3c382a",
+
+        "symbolIcon.methodForeground": "#e992a8",
     },
     "tokenColors": [
         {

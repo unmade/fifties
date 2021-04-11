@@ -136,13 +136,24 @@
         "peekViewResult.background": "#2e2d29",
         "peekViewResult.fileForeground": "#eae8e1",
         "peekViewResult.lineForeground": "#c5c0af",
-        // "peekViewResult.matchHighlightBackground": "#b0a27399",
         "peekViewResult.selectionForeground": "#eae8e1",
         "peekViewTitle.background": "#262521",
         "peekViewTitleDescription.foreground": "#757166",
         "peekViewTitleLabel.foreground": "#c5c0af",
     },
     "tokenColors": [
+
+        // General
+
+        {
+            "name": "Builtins",
+            "scope": [
+                "support.function.builtin",
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
+            }
+        },
         {
             "name": "Comment",
             "scope": [
@@ -152,94 +163,6 @@
             "settings": {
                 "fontStyle": "italic",
                 "foreground": "#757166"
-            }
-        },
-        {
-            "name": "Keyword, Storage",
-            "scope": [
-                "keyword",
-                "storage.type.function",
-                "storage.type.class",
-                "storage.modifier.js.jsx",
-                "constant.language.python",
-                "keyword.operator.logical.python",
-                "constant.character.format.placeholder.other",
-                "punctuation.section.embedded.begin",
-                "punctuation.section.embedded.end",
-                "entity.name.tag.yaml",
-                // js
-                "source.js meta.method.declaration meta.var.expr storage.type.js",
-                "storage.type.js",
-                "meta.object-literal.key meta.brace",
-                "punctuation.definition.template-expression.begin",
-                "punctuation.definition.template-expression.end",
-            ],
-            "settings": {
-                "foreground": "#db7c45",
-                "fontStyle": "",
-            }
-        },
-        {
-            "name": "No color",
-            "scope": [
-                "keyword.operator",
-                "storage.type.function.arrow",
-                "entity.other.inherited-class",
-                "meta.embedded.expression",
-                "storage.modifier",
-                "entity.name.section.group-title.ini",
-                "punctuation.separator.key-value.ini",
-                // js
-                "punctuation.separator.key-value.js",
-                "constant.language.import-export-all.js",
-                "meta.object-literal.key variable",
-                "meta.object-literal.key punctuation",
-                "meta.template.expression.js variable",
-                "meta.template.expression.js punctuation",
-                "meta.template.expression.js meta",
-            ],
-            "settings": {
-                "foreground": "#c5c0af",
-            }
-        },
-        {
-            "name": "Number",
-            "scope": [
-                "constant.numeric",
-            ],
-            "settings": {
-                "foreground": "#7fb3bd"
-            }
-        },
-        {
-            "name": "Magic",
-            "scope": [
-                "support.function.magic",
-                "support.variable.magic",
-            ],
-            "settings": {
-                "foreground": "#e992a8"
-            }
-        },
-        {
-            "name": "Exceptions",
-            "scope": [
-                "support.type.exception",
-            ],
-            "settings": {
-                "foreground": "#DD5341",
-            }
-        },
-        {
-            "name": "Self",
-            "scope": [
-                "variable.parameter.function.language.special.self",
-                "variable.language.special.self",
-                "variable.language.special.cls",
-                "variable.language.this",
-            ],
-            "settings": {
-                "foreground": "#aa8c4a",
             }
         },
         {
@@ -256,6 +179,62 @@
             }
         },
         {
+            "name": "Function name",
+            "scope": [
+                "entity.name.function",
+            ],
+            "settings": {
+                "foreground": "#FACA78",
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": [
+                "keyword",
+                "storage.type.function",
+                "storage.type.class",
+                "punctuation.section.embedded.begin",
+                "punctuation.section.embedded.end",
+            ],
+            "settings": {
+                "foreground": "#db7c45",
+                "fontStyle": "",
+            }
+        },
+        {
+            "name": "No color",
+            "scope": [
+                "entity.other.inherited-class",
+                "meta.embedded.expression",
+                "storage.modifier",
+                "keyword.operator",
+            ],
+            "settings": {
+                "foreground": "#c5c0af",
+            }
+        },
+        {
+            "name": "Number",
+            "scope": [
+                "constant.numeric",
+            ],
+            "settings": {
+                "foreground": "#7fb3bd"
+            }
+        },
+        {
+            "name": "Self",
+            "scope": [
+                "variable.parameter.function.language.special.self",
+                "variable.language.special.self",
+                "variable.language.special.cls",
+                "variable.language.this",
+            ],
+            "settings": {
+                "foreground": "#aa8c4a",
+            }
+        },
+        {
             "name": "String, Symbols, Markup Heading",
             "scope": [
                 "string",
@@ -263,44 +242,18 @@
                 "constant.other.key",
                 "markup.heading",
                 "markup.inserted.git_gutter",
-                "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
-                "storage.type.string.python",
-                "source.ini",
             ],
             "settings": {
                 "foreground": "#739B89"
             }
         },
         {
-            "name": "Docstring",
+            "name": "Super",
             "scope": [
-                "string.quoted.docstring.multi",
+                "variable.language.super",
             ],
             "settings": {
-                "foreground": "#739B89"
-            }
-        },
-
-        {
-            "name": "Keywords in function call",
-            "scope": [
-                "variable.parameter.function-call"
-            ],
-            "settings": {
-                "foreground": "#b14419",
-                "fontStyle": "italic"
-            }
-        },
-        {
-            "name": "Python decorator",
-            "scope": [
-                "punctuation.definition.decorator",
-                "entity.name.function.decorator",
-                "source.python meta.function.decorator support.type", // Handle textmate bug involving class decorator args
-                "source.python meta.function.decorator entity.name.function.decorator ",
-            ],
-            "settings": {
-                "foreground": "#73A1B0",
+                "foreground": "#90bb8f",
             }
         },
         {
@@ -315,29 +268,9 @@
             }
         },
         {
-            "name": "Function name",
+            "name": "React Tag",
             "scope": [
-                "entity.name.function",
-                "source.js meta.method.declaration storage.type.js",
-                "support.function.go",
-            ],
-            "settings": {
-                "foreground": "#FACA78",
-            }
-        },
-        {
-            "name": "Builtins",
-            "scope": [
-                "support.function.builtin",
-            ],
-            "settings": {
-                "foreground": "#90bb8f",
-            }
-        },
-        {
-            "name": "Super",
-            "scope": [
-                "variable.language.super",
+                "entity.name.tag support.class",
             ],
             "settings": {
                 "foreground": "#90bb8f",
@@ -357,15 +290,6 @@
             }
         },
         {
-            "name": "React Tag",
-            "scope": [
-                "entity.name.tag support.class",
-            ],
-            "settings": {
-                "foreground": "#90bb8f",
-            }
-        },
-        {
             "name": "Tag attributes",
             "scope": [
                 "meta.tag.attributes",
@@ -374,8 +298,63 @@
                 "foreground": "#aa8c4a",
             }
         },
+
+        // Go
+
         {
-            "name": "Literal keys",
+            "name": "Go: Function name",
+            "scope": [
+                "source.go support.function",
+            ],
+            "settings": {
+                "foreground": "#FACA78",
+            }
+        },
+
+        // Javascript
+
+        {
+            "name": "Javascript: 'constructor'",
+            "scope": [
+                "source.js meta.method.declaration storage.type",
+            ],
+            "settings": {
+                "foreground": "#FACA78",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Javascript: keywords and braces",
+            "scope": [
+                "source.js storage.type",
+                "source.js meta.method.declaration meta.var.expr storage.type.js",
+                "source.js meta.object-literal.key meta.brace",
+                "source.js punctuation.definition.template-expression.begin",
+                "source.js punctuation.definition.template-expression.end",
+            ],
+            "settings": {
+                "foreground": "#db7c45",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Javascript: no color",
+            "scope": [
+                "source.js storage.type.function.arrow",
+                "source.js punctuation.separator.key-value",
+                "source.js constant.language.import-export-all",
+                "source.js meta.object-literal.key variable",
+                "source.js meta.object-literal.key punctuation",
+                "source.js meta.template.expression variable",
+                "source.js meta.template.expression punctuation",
+                "source.js meta.template.expression meta",
+            ],
+            "settings": {
+                "foreground": "#c5c0af",
+            }
+        },
+        {
+            "name": "Javascript: object literal keys",
             "scope": [
                 "meta.object-literal.key",
                 "meta.object-literal.key string"
@@ -384,14 +363,188 @@
                 "foreground": "#a0613d",
             }
         },
+
+        // JSON
+
         {
             "name": "JSON",
             "scope": [
-                "support.type.property-name.json",
+                "source.json support.type.property-name",
             ],
             "settings": {
                 "fontStyle": "",
             }
-        }
+        },
+
+        // Markdown
+
+        {
+            "name": "Markdown: bold",
+            "scope": [
+                "text.html.markdown markup.bold",
+            ],
+            "settings": {
+                "fontStyle": "bold",
+            }
+        },
+        {
+            "name": "Markdown: bold italic",
+            "scope": [
+                "text.html.markdown markup.italic markup.bold",
+                "text.html.markdown markup.bold markup.italic",
+            ],
+            "settings": {
+                "fontStyle": "bold italic",
+            }
+        },
+        {
+            "name": "Markdown: code block",
+            "scope": [
+                "text.html.markdown markup.fenced_code punctuation.definition.markdown",
+                "text.html.markdown fenced_code.block.language.markdown"
+            ],
+            "settings": {
+                "foreground": "#757166",
+            }
+        },
+        {
+            "name": "Markdown: heading",
+            "scope": [
+                "text.html.markdown markup.heading",
+            ],
+            "settings": {
+                "foreground": "#a0613d"
+            }
+        },
+        {
+            "name": "Markdown: italic",
+            "scope": [
+                "text.html.markdown markup.italic",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+            }
+        },
+        {
+            "name": "Markdown: links",
+            "scope": [
+                "text.html.markdown meta.link"
+            ],
+            "settings": {
+                "foreground": "#7fb3bd",
+            }
+        },
+        {
+            "name": "Markdown: link title",
+            "scope": [
+                "text.html.markdown meta.link string.other.link.title",
+                "text.html.markdown meta.link punctuation.definition.string.begin",
+                "text.html.markdown meta.link punctuation.definition.string.end"
+            ],
+            "settings": {
+                "foreground": "#FACA78",
+            }
+        },
+        {
+            "name": "Markdown: quote",
+            "scope": [
+                "text.html.markdown markup.quote",
+            ],
+            "settings": {
+                "foreground": "#757166"
+            }
+        },
+
+        // Python
+
+        {
+            "name": "Python: and/in/or, True, False, None",
+            "scope": [
+                "source.python constant.language.python",
+                "source.python keyword.operator.logical",
+                "source.python constant.character.format.placeholder.other"
+            ],
+            "settings": {
+                "foreground": "#db7c45",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Python: decorators",
+            "scope": [
+                "source.python meta.function.decorator support.type", // Handle textmate bug involving class decorator args
+                "source.python meta.function.decorator entity.name.function.decorator ",
+            ],
+            "settings": {
+                "foreground": "#73A1B0",
+            }
+        },
+        {
+            "name": "Python: magic vars, function and methods",
+            "scope": [
+                "source.python support.function.magic",
+                "source.python support.variable.magic"
+            ],
+            "settings": {
+                "foreground": "#e992a8"
+            }
+        },
+        {
+            "name": "Python: named arguments",
+            "scope": [
+                "source.python variable.parameter.function-call"
+            ],
+            "settings": {
+                "foreground": "#b14419",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Python: strings",
+            "scope": [
+                "source.python meta.fstring.python storage.type",
+                "source.python meta.fstring.python constant.character.escape.python"
+            ],
+            "settings": {
+                "foreground": "#739B89"
+            }
+        },
+
+        // TOML
+
+        {
+            "name": "TOML: booleans",
+            "scope": [
+                "source.toml constant.other.boolean",
+            ],
+            "settings": {
+                "foreground": "#e992a8",
+                "fontStyle": "",
+            }
+        },
+
+        // YAML
+
+        {
+            "name": "YAML: tags",
+            "scope": [
+                "source.yaml entity.name.tag",
+            ],
+            "settings": {
+                "foreground": "#db7c45",
+                "fontStyle": "",
+            }
+        },
+        {
+            "name": "YAML: unquotes strings",
+            "scope": [
+                "source.yaml string.unquoted.plain",
+            ],
+            "settings": {
+                "foreground": "#c5c0af",
+                "fontStyle": "",
+            }
+        },
+
     ]
 }

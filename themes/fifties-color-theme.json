@@ -78,6 +78,8 @@
         "statusBar.foreground" : "#c9c3b1",
         "statusBar.debuggingBackground": "#b86c41",
         "statusBar.debuggingForeground": "#ffd6bf",
+        "statusBar.noFolderForeground": "#daf8ff",
+        "statusBar.noFolderBackground": "#7fb3bd",
 
         "gitDecoration.addedResourceForeground": "#90bb8f",
         "gitDecoration.deletedResourceForeground": "#DD5341",
@@ -116,6 +118,17 @@
         "debugTokenExpression.string": "#739B89",
         "debugTokenExpression.number": "#7fb3bd",
         "debugTokenExpression.boolean": "#e992a8",
+
+        "editorGutter.addedBackground": "#90bb8f",
+        "editorGutter.modifiedBackground": "#73a1b0",
+        "editorGutter.deletedBackground": "#dd5341",
+
+        "editorOverviewRuler.modifiedForeground": "#73a1b0aa",
+        "editorOverviewRuler.addedForeground": "#90bb8f88",
+        "editorOverviewRuler.deletedForeground": "#dd534188",
+
+        "diffEditor.insertedTextBackground": "#467c584f",
+        "diffEditor.removedTextBackground": "#dd534154",
     },
     "tokenColors": [
         {

@@ -129,6 +129,18 @@
 
         "diffEditor.insertedTextBackground": "#467c584f",
         "diffEditor.removedTextBackground": "#dd534154",
+
+        "peekView.border": "#73a1b0",
+        "peekViewEditor.background": "#34332d",
+        "peekViewEditor.matchHighlightBackground": "#b0a27355",
+        "peekViewResult.background": "#2e2d29",
+        "peekViewResult.fileForeground": "#eae8e1",
+        "peekViewResult.lineForeground": "#c5c0af",
+        // "peekViewResult.matchHighlightBackground": "#b0a27399",
+        "peekViewResult.selectionForeground": "#eae8e1",
+        "peekViewTitle.background": "#262521",
+        "peekViewTitleDescription.foreground": "#757166",
+        "peekViewTitleLabel.foreground": "#c5c0af",
     },
     "tokenColors": [
         {

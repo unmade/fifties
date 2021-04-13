@@ -573,13 +573,45 @@
             }
         },
         {
+            "name": "Python: built-in type annotation",
+            "scope": [
+                "support.type",
+            ],
+            "settings": {
+                "foreground": "#c5c0af",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Python: built-in type call",
+            "scope": [
+                "source.python support.function.builtin",
+                "source.python meta.function-call.python support.type",
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
+                "fontStyle": ""
+            }
+        },
+        {
             "name": "Python: decorators",
             "scope": [
                 "source.python meta.function.decorator support.type", // Handle textmate bug involving class decorator args
-                "source.python meta.function.decorator entity.name.function.decorator ",
+                "source.python meta.function.decorator entity.name.function.decorator",
             ],
             "settings": {
                 "foreground": "#73A1B0",
+            }
+        },
+        {
+            "name": "Python: docstring",
+            "scope": [
+                "source.python string.quoted.docstring",
+                "source.python string.quoted.docstring keyword.control.flow",
+            ],
+            "settings": {
+                "foreground": "#739B89",
+                "fontStyle": "italic"
             }
         },
         {
@@ -605,6 +637,7 @@
         {
             "name": "Python: strings",
             "scope": [
+                "source.python string",
                 "source.python meta.fstring.python storage.type",
                 "source.python meta.fstring.python constant.character.escape.python"
             ],

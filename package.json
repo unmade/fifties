@@ -9,6 +9,12 @@
     "categories": [
         "Themes"
     ],
+    "keywords": [
+        "fifties",
+        "python theme",
+        "retro",
+        "vintage"
+    ],
     "contributes": {
         "themes": [
             {
@@ -17,5 +23,9 @@
                 "path": "./themes/fifties-color-theme.json"
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/unmade/fifties"
     }
 }

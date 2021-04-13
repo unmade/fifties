@@ -281,8 +281,7 @@
                 "entity.name.tag",
                 "meta.tag.sgml",
                 "markup.deleted.git_gutter",
-                "punctuation.definition.tag.begin",
-                "punctuation.definition.tag.end",
+                "punctuation.definition.tag",
             ],
             "settings": {
                 "foreground": "#a0613d"
@@ -292,6 +291,7 @@
             "name": "Tag attributes",
             "scope": [
                 "meta.tag.attributes",
+                "entity.other.attribute-name",
             ],
             "settings": {
                 "foreground": "#aa8c4a",
@@ -323,11 +323,14 @@
         {
             "name": "C: built-in type",
             "scope": [
+                "source.c storage.type.built-in",
+                "source.cpp storage.type.built-in",
                 "source.c storage.type.built-in.primitive",
                 "source.cpp storage.type.built-in.primitive",
             ],
             "settings": {
                 "foreground": "#a0613d",
+                "fontStyle": "italic"
             }
         },
 
@@ -687,6 +690,15 @@
 
         // TOML
 
+        {
+            "name": "TOML: section",
+            "scope": [
+                "source.toml entity.other.attribute-name",
+            ],
+            "settings": {
+                "foreground": "#c5c0af",
+            }
+        },
         {
             "name": "TOML: attribute name",
             "scope": [

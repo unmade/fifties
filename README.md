@@ -1,16 +1,17 @@
-# README
+# Fifties
 
-## This is the README for your extension "fifties"
+Fifties - VS Code theme inspired by Gruvbox and Darcula.
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+## Screenshots
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+### Python
 
-### For more information
+<img src="https://i.imgur.com/hWr2RkA.png" alt="fifties-python" width="1191">
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+### JSX
 
-**Enjoy!**
+<img src="https://i.imgur.com/2lzF9Wq.png" alt="fifties-jsx" width="1191">
+
+### Terminal
+
+<img src="https://i.imgur.com/b56YMrG.png" alt="fifties-terminal" width="1191">

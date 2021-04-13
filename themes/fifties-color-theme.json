@@ -471,6 +471,7 @@
         {
             "name": "Javascript: keywords and braces",
             "scope": [
+                "source.js storage.modifier",
                 "source.js meta.method.declaration meta.var.expr storage.type.js",
                 "source.js meta.object-literal.key meta.brace",
                 "source.js punctuation.definition.template-expression.begin",
@@ -726,6 +727,7 @@
             "name": "YAML: tags",
             "scope": [
                 "source.yaml entity.name.tag",
+                "source.yaml constant.language",
             ],
             "settings": {
                 "foreground": "#db7c45",

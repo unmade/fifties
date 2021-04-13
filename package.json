@@ -1,7 +1,7 @@
 {
     "name": "fifties",
     "displayName": "Fifties",
-    "description": "Dark color theme inspired by Gruvbox and Pycharm Darcula",
+    "description": "Dark color theme inspired by Gruvbox and Darcula",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.55.0"

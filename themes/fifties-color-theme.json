@@ -191,8 +191,8 @@
             "name": "Keywords",
             "scope": [
                 "keyword",
-                "storage.type.function",
-                "storage.type.class",
+                "storage.type",
+                "keyword.operator.new",
                 "punctuation.section.embedded.begin",
                 "punctuation.section.embedded.end",
             ],
@@ -260,7 +260,6 @@
             "name": "Support type",
             "scope": [
                 "support.type",
-                "storage.type",
             ],
             "settings": {
                 "foreground": "#a0613d",
@@ -299,6 +298,39 @@
             }
         },
 
+        // C
+
+        {
+            "name": "C: keywords",
+            "scope": [
+                "source.c storage.modifier",
+            ],
+            "settings": {
+                "foreground": "#db7c45",
+                "fontStyle": "",
+            }
+        },
+        {
+            "name": "C: preprocessor",
+            "scope": [
+                "source.c entity.name.function.preprocessor",
+                "source.cpp entity.name.function.preprocessor",
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
+            }
+        },
+        {
+            "name": "C: built-in type",
+            "scope": [
+                "source.c storage.type.built-in.primitive",
+                "source.cpp storage.type.built-in.primitive",
+            ],
+            "settings": {
+                "foreground": "#a0613d",
+            }
+        },
+
         // CSS
 
         {
@@ -308,7 +340,6 @@
             ],
             "settings": {
                 "foreground": "#db7c45",
-                // "fontStyle": "bold"
             }
         },
         {
@@ -391,6 +422,15 @@
                 "foreground": "#FACA78",
             }
         },
+        {
+            "name": "Go: built-in type",
+            "scope": [
+                "source.go storage.type",
+            ],
+            "settings": {
+                "foreground": "#a0613d",
+            }
+        },
 
         // ini
 
@@ -428,7 +468,6 @@
         {
             "name": "Javascript: keywords and braces",
             "scope": [
-                "source.js storage.type",
                 "source.js meta.method.declaration meta.var.expr storage.type.js",
                 "source.js meta.object-literal.key meta.brace",
                 "source.js punctuation.definition.template-expression.begin",
@@ -575,7 +614,7 @@
         {
             "name": "Python: built-in type annotation",
             "scope": [
-                "support.type",
+                "source.python support.type",
             ],
             "settings": {
                 "foreground": "#c5c0af",
@@ -689,6 +728,18 @@
             "settings": {
                 "foreground": "#c5c0af",
                 "fontStyle": "",
+            }
+        },
+
+        // Typescript
+
+        {
+            "name": "Typescript: arrow function",
+            "scope": [
+                "source.tsx storage.type.function.arrow",
+            ],
+            "settings": {
+                "foreground": "#c5c0af",
             }
         },
 

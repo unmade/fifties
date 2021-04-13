@@ -299,6 +299,87 @@
             }
         },
 
+        // CSS
+
+        {
+            "name": "CSS: keywords",
+            "scope": [
+                "source.css keyword.operator.logical",
+            ],
+            "settings": {
+                "foreground": "#db7c45",
+                // "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "CSS: tag name",
+            "scope": [
+                "source.css entity.name.tag",
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
+            }
+        },
+        {
+            "name": "CSS: attribute name",
+            "scope": [
+                "source.css entity.other.attribute-name.id",
+                "source.css entity.other.attribute-name.class",
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
+            }
+        },
+        {
+            "name": "CSS: property keys",
+            "scope": [
+                "source.css support.type.property-name",
+                "source.css meta.property-name support.type",
+            ],
+            "settings": {
+                "foreground": "#a0613d",
+                "fontStyle": "",
+            }
+        },
+        {
+            "name": "CSS: property values",
+            "scope": [
+                "source.css keyword.other.unit",
+                "source.css meta.property-value support.constant",
+                "source.css support.constant.media",
+            ],
+            "settings": {
+                "foreground": "#c5c0af",
+            }
+        },
+        {
+            "name": "CSS: functions",
+            "scope": [
+                "source.css support.function",
+            ],
+            "settings": {
+                "foreground": "#FACA78",
+            }
+        },
+        {
+            "name": "CSS: pseudo-class",
+            "scope": [
+                "source.css entity.other.attribute-name.pseudo-class",
+            ],
+            "settings": {
+                "foreground": "#aa8c4a",
+            }
+        },
+        {
+            "name": "CSS: hex colors",
+            "scope": [
+                "source.css constant.other.color.rgb-value.hex",
+            ],
+            "settings": {
+                "foreground": "#7fb3bd",
+            }
+        },
+
         // Go
 
         {
@@ -308,6 +389,27 @@
             ],
             "settings": {
                 "foreground": "#FACA78",
+            }
+        },
+
+        // ini
+
+        {
+            "name": "ini: section",
+            "scope": [
+                "source.ini entity.name.section.group-title"
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
+            }
+        },
+        {
+            "name": "ini: attribute name",
+            "scope": [
+                "source.ini keyword.other",
+            ],
+            "settings": {
+                "foreground": "#a0613d",
             }
         },
 
@@ -356,8 +458,9 @@
         {
             "name": "Javascript: object literal keys",
             "scope": [
-                "meta.object-literal.key",
-                "meta.object-literal.key string"
+                "source.js meta.object-literal.key",
+                "source.js meta.object-literal.key string",
+                "source.js meta.object-literal.key punctuation.definition.string",
             ],
             "settings": {
                 "foreground": "#a0613d",
@@ -512,6 +615,16 @@
 
         // TOML
 
+        {
+            "name": "TOML: attribute name",
+            "scope": [
+                "source.toml keyword.key",
+            ],
+            "settings": {
+                "foreground": "#a0613d",
+                "fontStyle": "",
+            }
+        },
         {
             "name": "TOML: booleans",
             "scope": [

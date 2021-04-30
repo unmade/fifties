@@ -1,0 +1,27 @@
+name: Release
+
+on:
+    push:
+      tags:
+        - '[0-2].[0-9]+.[0-9]+*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Use Node.js
+      uses: actions/setup-node@master
+      with:
+        node-version: '14.x'
+
+    - name: Insall vsce
+      run: |
+        npm install -g vsce
+
+    - name: Publish Package
+      env:
+        PUBLISHER_TOKEN: ${{ secrets.PUBLISHER_TOKEN }}
+      run: |
+        vsce publish -p "${PUBLISHER_TOKEN}"

@@ -620,9 +620,11 @@
             "name": "Python: built-in type annotation",
             "scope": [
                 "source.python support.type",
+                "source.python meta.item-access.arguments support.type",
+                "source.python meta.function.decorator meta.function-call.arguments support.type",
             ],
             "settings": {
-                "foreground": "#c5c0af",
+                "foreground": "#a0613d",
                 "fontStyle": ""
             }
         },
@@ -631,6 +633,7 @@
             "scope": [
                 "source.python support.function.builtin",
                 "source.python meta.function-call.python support.type",
+                "source.python meta.item-access meta.function-call.python support.type",
             ],
             "settings": {
                 "foreground": "#90bb8f",
@@ -645,17 +648,28 @@
             ],
             "settings": {
                 "foreground": "#73A1B0",
+                "fontStyle": "",
             }
         },
         {
             "name": "Python: docstring",
             "scope": [
                 "source.python string.quoted.docstring",
-                "source.python string.quoted.docstring keyword.control.flow",
+                "source.python string.quoted.docstring keyword.control.flow"
             ],
             "settings": {
                 "foreground": "#739B89",
                 "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Python: exceptions",
+            "scope": [
+                "source.python support.type.exception"
+            ],
+            "settings": {
+                "foreground": "#90bb8f",
+                "fontStyle": ""
             }
         },
         {

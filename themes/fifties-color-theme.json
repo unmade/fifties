@@ -673,6 +673,16 @@
             }
         },
         {
+            "name": "Python: global, nonlocal",
+            "scope": [
+                "source.python storage.modifier.declaration"
+            ],
+            "settings": {
+                "foreground": "#db7c45",
+                "fontStyle": ""
+            }
+        },
+        {
             "name": "Python: magic vars, function and methods",
             "scope": [
                 "source.python support.function.magic",

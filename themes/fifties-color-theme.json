@@ -477,6 +477,7 @@
                 "source.js meta.object-literal.key meta.brace",
                 "source.js punctuation.definition.template-expression.begin",
                 "source.js punctuation.definition.template-expression.end",
+                "source.js keyword.operator.expression.of"
             ],
             "settings": {
                 "foreground": "#db7c45",
@@ -508,6 +509,15 @@
             ],
             "settings": {
                 "foreground": "#a0613d",
+            }
+        },
+        {
+            "name": "Javascript: string quotes inside string interpolation",
+            "scope": [
+                "source.js meta.template.expression string punctuation.definition.string"
+            ],
+            "settings": {
+                "foreground": "#739B89",
             }
         },
 

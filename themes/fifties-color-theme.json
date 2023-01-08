@@ -477,9 +477,11 @@
                 "source.js meta.object-literal.key meta.brace",
                 "source.js punctuation.definition.template-expression.begin",
                 "source.js punctuation.definition.template-expression.end",
+                "source.js keyword.operator.expression.delete",
                 "source.js keyword.operator.expression.of",
                 "source.js keyword.operator.expression.in",
-                "source.js keyword.operator.expression.instanceof"
+                "source.js keyword.operator.expression.instanceof",
+                "source.js keyword.operator.expression.typeof"
             ],
             "settings": {
                 "foreground": "#db7c45",
@@ -777,8 +779,19 @@
                 "source.yaml string.unquoted.plain",
             ],
             "settings": {
-                "foreground": "#c5c0af",
-                "fontStyle": "",
+                "foreground": "#c5c0af"
+            }
+        },
+
+        // Svelte
+
+        {
+            "name": "Svelte: components",
+            "scope": [
+                "source.svelte support.class.component.svelte",
+            ],
+            "settings": {
+                "foreground": "#90bb8f"
             }
         },
 

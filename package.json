@@ -2,10 +2,10 @@
     "name": "fifties",
     "displayName": "Fifties",
     "description": "Dark color theme inspired by Gruvbox and Darcula",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "fifties",
     "engines": {
-        "vscode": "^1.55.0"
+        "vscode": "^1.74.0"
     },
     "categories": [
         "Themes"
